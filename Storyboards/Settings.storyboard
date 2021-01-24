@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ruR-Vi-p3i">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Einstellungen-->
+        <scene sceneID="rHy-WT-2H8">
+            <objects>
+                <tableViewController id="k5e-Yf-CEh" customClass="SettingsViewController" customModule="HomiumForIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cJH-rl-hHG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Einkaufsliste" id="G9m-KP-7qW">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="1vo-Bt-ogZ">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1vo-Bt-ogZ" id="kXU-yU-4at">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8tQ-eF-Vrg">
+                                                    <rect key="frame" x="341" y="6.6666666666666679" width="51" height="31.000000000000004"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="49" id="ArN-iD-dkw"/>
+                                                        <constraint firstAttribute="height" constant="31" id="Gua-NQ-gMp"/>
+                                                    </constraints>
+                                                    <color key="tintColor" name="ColorAccent"/>
+                                                    <color key="onTintColor" name="ColorAccent"/>
+                                                    <connections>
+                                                        <action selector="switchShoppingDeleteQuestionValueChanged:" destination="k5e-Yf-CEh" eventType="valueChanged" id="Xt2-e7-Cxc"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sicherheitsfrage beim Löschen" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4l-r9-cSg">
+                                                    <rect key="frame" x="24" y="16" width="301" height="12"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8tQ-eF-Vrg" firstAttribute="leading" secondItem="G4l-r9-cSg" secondAttribute="trailing" constant="16" id="4fo-sa-nzV"/>
+                                                <constraint firstItem="8tQ-eF-Vrg" firstAttribute="centerY" secondItem="kXU-yU-4at" secondAttribute="centerY" id="DvZ-IS-6yJ"/>
+                                                <constraint firstItem="G4l-r9-cSg" firstAttribute="leading" secondItem="kXU-yU-4at" secondAttribute="leading" constant="24" id="Qc3-ph-D4f"/>
+                                                <constraint firstAttribute="trailing" secondItem="8tQ-eF-Vrg" secondAttribute="trailing" constant="24" id="b9b-Ib-bsC"/>
+                                                <constraint firstItem="G4l-r9-cSg" firstAttribute="centerY" secondItem="8tQ-eF-Vrg" secondAttribute="centerY" id="cFo-jK-ard"/>
+                                                <constraint firstAttribute="bottom" secondItem="G4l-r9-cSg" secondAttribute="bottom" constant="16" id="gmt-tW-IMP"/>
+                                                <constraint firstItem="G4l-r9-cSg" firstAttribute="top" secondItem="kXU-yU-4at" secondAttribute="top" constant="16" id="y7m-gy-GxB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Inventar" id="xgW-sM-tS7">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Mw6-hg-CD4">
+                                        <rect key="frame" x="0.0" y="127.66666793823242" width="414" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mw6-hg-CD4" id="OLI-Mp-MfU">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sicherheitsfrage beim Löschen" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncK-tm-2fX">
+                                                    <rect key="frame" x="24" y="16" width="301" height="12"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PNf-Jj-dSD">
+                                                    <rect key="frame" x="341" y="6.6666666666666679" width="51" height="31.000000000000004"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="49" id="F1M-lj-Ld9"/>
+                                                        <constraint firstAttribute="height" constant="31" id="U4A-LD-dwz"/>
+                                                    </constraints>
+                                                    <color key="onTintColor" name="ColorAccent"/>
+                                                    <connections>
+                                                        <action selector="switchInventoryDeleteQuestionValueChanged:" destination="k5e-Yf-CEh" eventType="valueChanged" id="Oga-IN-q38"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ncK-tm-2fX" firstAttribute="leading" secondItem="OLI-Mp-MfU" secondAttribute="leading" constant="24" id="0Yn-DC-GvT"/>
+                                                <constraint firstItem="ncK-tm-2fX" firstAttribute="top" secondItem="OLI-Mp-MfU" secondAttribute="top" constant="16" id="5cd-Z4-jpS"/>
+                                                <constraint firstItem="PNf-Jj-dSD" firstAttribute="centerY" secondItem="OLI-Mp-MfU" secondAttribute="centerY" id="R4W-4T-TwR"/>
+                                                <constraint firstAttribute="trailing" secondItem="PNf-Jj-dSD" secondAttribute="trailing" constant="24" id="TtX-lC-FGd"/>
+                                                <constraint firstItem="PNf-Jj-dSD" firstAttribute="leading" secondItem="ncK-tm-2fX" secondAttribute="trailing" constant="16" id="eq6-hb-5yq"/>
+                                                <constraint firstAttribute="bottom" secondItem="ncK-tm-2fX" secondAttribute="bottom" constant="16" id="ncP-F0-d1u"/>
+                                                <constraint firstItem="PNf-Jj-dSD" firstAttribute="centerY" secondItem="ncK-tm-2fX" secondAttribute="centerY" id="qzB-cb-4yo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="inventorysortalgorithmcell" id="ndR-AS-2n2" customClass="InventorySortAlgorithmTableViewCell" customModule="HomiumForIOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="171.33333587646484" width="414" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ndR-AS-2n2" id="ZNl-SP-NnQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sortierung " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FoK-cP-r5w">
+                                                    <rect key="frame" x="24" y="16" width="196.33333333333334" height="12"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zkv-Pf-zl0">
+                                                    <rect key="frame" x="236.33333333333337" y="15" width="130.66666666666663" height="14.333333333333336"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FoK-cP-r5w" firstAttribute="leading" secondItem="ZNl-SP-NnQ" secondAttribute="leading" constant="24" id="6oa-w8-IKp"/>
+                                                <constraint firstAttribute="trailing" secondItem="Zkv-Pf-zl0" secondAttribute="trailing" constant="16" id="KX9-8a-bp4"/>
+                                                <constraint firstItem="FoK-cP-r5w" firstAttribute="top" secondItem="ZNl-SP-NnQ" secondAttribute="top" constant="16" id="Kjo-qU-qix"/>
+                                                <constraint firstItem="Zkv-Pf-zl0" firstAttribute="centerY" secondItem="FoK-cP-r5w" secondAttribute="centerY" id="Rpa-CW-6ab"/>
+                                                <constraint firstAttribute="bottom" secondItem="FoK-cP-r5w" secondAttribute="bottom" constant="16" id="aOj-Lb-71l"/>
+                                                <constraint firstItem="Zkv-Pf-zl0" firstAttribute="leading" secondItem="FoK-cP-r5w" secondAttribute="trailing" constant="16" id="hp2-OV-O2N"/>
+                                                <constraint firstItem="FoK-cP-r5w" firstAttribute="width" secondItem="Zkv-Pf-zl0" secondAttribute="width" multiplier="1.5" id="y9b-nT-XfA"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="InventorySortCellTouched:" destination="k5e-Yf-CEh" eventType="touchUpInside" id="NM8-Ei-bGx"/>
+                                            </connections>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="inventorysortalgorithmcell" id="JQl-za-VHn" customClass="InventorySortAlgorithmTableViewCell" customModule="HomiumForIOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="215.00000381469727" width="414" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JQl-za-VHn" id="IVi-op-QhH">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Einkaufslistenimport" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyK-ZB-wwp">
+                                                    <rect key="frame" x="24" y="16" width="196.33333333333334" height="12"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMU-cT-PXv">
+                                                    <rect key="frame" x="236.33333333333337" y="16" width="130.66666666666663" height="12"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="EyK-ZB-wwp" firstAttribute="top" secondItem="IVi-op-QhH" secondAttribute="top" constant="16" id="4BD-Hl-YNP"/>
+                                                <constraint firstItem="WMU-cT-PXv" firstAttribute="top" secondItem="IVi-op-QhH" secondAttribute="top" constant="16" id="9cK-wi-NRw"/>
+                                                <constraint firstItem="WMU-cT-PXv" firstAttribute="leading" secondItem="EyK-ZB-wwp" secondAttribute="trailing" constant="16" id="LGt-MB-bhu"/>
+                                                <constraint firstAttribute="trailing" secondItem="WMU-cT-PXv" secondAttribute="trailing" constant="16" id="Llz-px-0hJ"/>
+                                                <constraint firstItem="EyK-ZB-wwp" firstAttribute="width" secondItem="WMU-cT-PXv" secondAttribute="width" multiplier="1.5" id="Ue9-GJ-TJx"/>
+                                                <constraint firstAttribute="bottom" secondItem="WMU-cT-PXv" secondAttribute="bottom" constant="16" id="jnr-RB-5cd"/>
+                                                <constraint firstItem="EyK-ZB-wwp" firstAttribute="leading" secondItem="IVi-op-QhH" secondAttribute="leading" constant="24" id="jtY-ie-ubO"/>
+                                                <constraint firstItem="EyK-ZB-wwp" firstAttribute="centerY" secondItem="IVi-op-QhH" secondAttribute="centerY" id="pZ0-Ba-UeZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="EyK-ZB-wwp" secondAttribute="bottom" constant="16" id="tTT-T1-4yb"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="InventorySortCellTouched:" destination="k5e-Yf-CEh" eventType="touchUpInside" id="slP-Tx-XHM"/>
+                                            </connections>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="inventorysortalgorithmcell" id="vHd-Nb-e2n" customClass="InventorySortAlgorithmTableViewCell" customModule="HomiumForIOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="258.66667175292969" width="414" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vHd-Nb-e2n" id="h1X-Jm-vPT">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Automatische Standortintegration beim Einkaufslistenimport" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzV-GB-RI3">
+                                                    <rect key="frame" x="24" y="16" width="303" height="12"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rSM-xN-eha">
+                                                    <rect key="frame" x="343" y="6.6666666666666679" width="49" height="31.000000000000004"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="47" id="FgR-B4-00O"/>
+                                                        <constraint firstAttribute="height" constant="31" id="VP2-PK-KxW"/>
+                                                    </constraints>
+                                                    <color key="onTintColor" name="ColorAccent"/>
+                                                    <connections>
+                                                        <action selector="switchAutoLocationIntegrationValueChanged:" destination="k5e-Yf-CEh" eventType="valueChanged" id="gCt-ne-Dha"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="rSM-xN-eha" secondAttribute="trailing" constant="24" id="BYU-9b-NjS"/>
+                                                <constraint firstItem="pzV-GB-RI3" firstAttribute="top" secondItem="h1X-Jm-vPT" secondAttribute="top" constant="16" id="FYd-eW-90l"/>
+                                                <constraint firstAttribute="bottom" secondItem="pzV-GB-RI3" secondAttribute="bottom" constant="16" id="GqR-TI-liu"/>
+                                                <constraint firstItem="rSM-xN-eha" firstAttribute="centerY" secondItem="pzV-GB-RI3" secondAttribute="centerY" id="U05-TR-GaC"/>
+                                                <constraint firstItem="pzV-GB-RI3" firstAttribute="leading" secondItem="h1X-Jm-vPT" secondAttribute="leading" constant="24" id="dJc-Kq-OYJ"/>
+                                                <constraint firstItem="rSM-xN-eha" firstAttribute="leading" secondItem="pzV-GB-RI3" secondAttribute="trailing" constant="16" id="yFf-IX-xfU"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="InventorySortCellTouched:" destination="k5e-Yf-CEh" eventType="touchUpInside" id="Gca-W4-66f"/>
+                                            </connections>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Rezepte" id="Bgd-Yl-S4d">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="tIY-Vu-xUE">
+                                        <rect key="frame" x="0.0" y="358.33333969116211" width="414" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tIY-Vu-xUE" id="1Pf-Yx-TCF">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sicherheitsfrage beim Löschen" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0B8-Kn-C1s">
+                                                    <rect key="frame" x="24" y="16" width="301" height="12"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qZa-uX-AVr">
+                                                    <rect key="frame" x="341" y="6.6666666666666679" width="51" height="31.000000000000004"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="31" id="7k0-PR-6zo"/>
+                                                        <constraint firstAttribute="width" constant="49" id="zRR-6k-dFw"/>
+                                                    </constraints>
+                                                    <color key="onTintColor" name="ColorAccent"/>
+                                                    <connections>
+                                                        <action selector="switchInventoryDeleteQuestionValueChanged:" destination="k5e-Yf-CEh" eventType="valueChanged" id="ChY-A4-GVL"/>
+                                                        <action selector="switchRecipeDeleteQuestionValueChanged:" destination="k5e-Yf-CEh" eventType="valueChanged" id="IBk-fj-a1x"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="0B8-Kn-C1s" secondAttribute="bottom" constant="16" id="4bn-Cr-2P9"/>
+                                                <constraint firstItem="qZa-uX-AVr" firstAttribute="leading" secondItem="0B8-Kn-C1s" secondAttribute="trailing" constant="16" id="GI0-X4-zxI"/>
+                                                <constraint firstItem="0B8-Kn-C1s" firstAttribute="top" secondItem="1Pf-Yx-TCF" secondAttribute="top" constant="16" id="Qm6-ry-SD0"/>
+                                                <constraint firstItem="qZa-uX-AVr" firstAttribute="centerY" secondItem="0B8-Kn-C1s" secondAttribute="centerY" id="bG8-kP-KdU"/>
+                                                <constraint firstItem="0B8-Kn-C1s" firstAttribute="leading" secondItem="1Pf-Yx-TCF" secondAttribute="leading" constant="24" id="bRl-fo-zlj"/>
+                                                <constraint firstAttribute="trailing" secondItem="qZa-uX-AVr" secondAttribute="trailing" constant="24" id="cr4-Nk-gyw"/>
+                                                <constraint firstItem="qZa-uX-AVr" firstAttribute="centerY" secondItem="1Pf-Yx-TCF" secondAttribute="centerY" id="xal-cE-3LB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="k5e-Yf-CEh" id="wMj-wb-7gg"/>
+                            <outlet property="delegate" destination="k5e-Yf-CEh" id="VWk-fc-gTd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Einstellungen" id="7Ji-Xt-n7x"/>
+                    <connections>
+                        <outlet property="lblInventoryImportOptions" destination="WMU-cT-PXv" id="cgi-f1-ISu"/>
+                        <outlet property="lblInventorySortAlgorithm" destination="Zkv-Pf-zl0" id="rBV-Lg-CPI"/>
+                        <outlet property="switchAutoLocationIntegration" destination="rSM-xN-eha" id="b3n-XY-ZUn"/>
+                        <outlet property="switchInventoryDeleteQuestion" destination="PNf-Jj-dSD" id="axS-8m-q8L"/>
+                        <outlet property="switchRecipeDeleteQuestion" destination="qZa-uX-AVr" id="cAQ-f3-FaL"/>
+                        <outlet property="switchShoppingDeleteQuestion" destination="8tQ-eF-Vrg" id="JRm-J9-XSr"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i7A-aQ-rK6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="127.98913043478262"/>
+        </scene>
+        <!--Einstellungen-->
+        <scene sceneID="2os-Hm-2ZD">
+            <objects>
+                <navigationController id="ruR-Vi-p3i" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Einstellungen" image="wrench.fill" catalog="system" id="JSl-Ua-vRT"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Xkd-ml-Y7K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="k5e-Yf-CEh" kind="relationship" relationship="rootViewController" id="0W0-4N-33I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xIy-AO-F0W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-884" y="128"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" name="ColorAccent"/>
+    <resources>
+        <image name="wrench.fill" catalog="system" width="128" height="120"/>
+        <namedColor name="ColorAccent">
+            <color red="0.090196078431372548" green="0.41568627450980394" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

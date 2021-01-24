@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Ingredient" representedClassName="Ingredient" syncable="YES" codeGenerationType="class">
+        <attribute name="quantity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="unit" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="InventoryItem" representedClassName="InventoryItem" syncable="YES" codeGenerationType="class">
+        <attribute name="location" attributeType="String"/>
+        <attribute name="quantity" attributeType="Double" defaultValueString="1" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="unit" attributeType="String"/>
+    </entity>
+    <entity name="Recipe" representedClassName="Recipe" syncable="YES" codeGenerationType="class">
+        <attribute name="descriptions" optional="YES" attributeType="String"/>
+        <attribute name="imagePath" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="consistsof" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Ingredient"/>
+    </entity>
+    <entity name="ShoppingItem" representedClassName="ShoppingItem" syncable="YES" codeGenerationType="class">
+        <attribute name="quantity" attributeType="Double" defaultValueString="1" usesScalarValueType="YES"/>
+        <attribute name="selected" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="unit" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Ingredient" positionX="222.35546875" positionY="91.3125" width="128" height="88"/>
+        <element name="InventoryItem" positionX="96.328125" positionY="-91.2265625" width="128" height="103"/>
+        <element name="Recipe" positionX="-30.05859375" positionY="174.66796875" width="120.48046875" height="103"/>
+        <element name="ShoppingItem" positionX="-63" positionY="-18" width="128" height="103"/>
+    </elements>
+</model>

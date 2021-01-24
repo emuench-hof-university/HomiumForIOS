@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bsJ-yl-PD4">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LaunchViewController" customModule="HomiumForIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="jBu-19-AmK">
+                                <rect key="frame" x="89.5" y="173" width="141" height="134.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="ColorPrimary"/>
+                        <constraints>
+                            <constraint firstItem="jBu-19-AmK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="HhJ-XV-NIZ"/>
+                            <constraint firstItem="jBu-19-AmK" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="X8q-dK-WXw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="im2-2o-z32"/>
+                    <connections>
+                        <segue destination="xjc-nm-HA5" kind="show" identifier="segueLaunchToOnboarding" id="kTx-hp-EHo"/>
+                        <segue destination="maC-7h-Rxf" kind="show" identifier="segueLaunchToMainMenu" id="3lx-Pe-Tox"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136.25" y="115"/>
+        </scene>
+        <!--MainMenuStart-->
+        <scene sceneID="OLj-1S-sNO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainMenu" referencedIdentifier="MainMenuStart" id="maC-7h-Rxf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pFs-zy-In2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1kW-U5-Fnh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1987" y="-224"/>
+        </scene>
+        <!--OnBoardingStart-->
+        <scene sceneID="OOX-GD-SGk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OnBoarding" referencedIdentifier="OnBoardingStart" id="xjc-nm-HA5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Vml-dv-wfr"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="evr-fE-TRe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1995" y="371.25"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xmS-fX-oey">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="bsJ-yl-PD4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WJX-hW-jev">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IEo-W3-Ryk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SMg-ct-JsO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AppLogo" width="141" height="134.5"/>
+        <namedColor name="ColorPrimary">
+            <color red="0.090196078431372548" green="0.41568627450980394" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
